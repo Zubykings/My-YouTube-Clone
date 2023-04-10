@@ -9,7 +9,13 @@ body {
     font-family: 'Asap', sans-serif;
     line-height: 1.8;
 }
-
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background: #3f3e3e;
+    border-radius: 20px;
+}
 .sub-body {
     position: relative;
 }
@@ -156,6 +162,7 @@ li {
     left: 0;
     top: 4rem;
     z-index: 50;
+    padding-right: 10px;
 }
 .sidebar:hover {
     overflow-y: scroll;
@@ -304,12 +311,13 @@ footer ul li a {
     padding-top: 20px;
     display: flex;
     flex-flow: row wrap;
-    flex: 0 0 30%;
     justify-content: space-between;
     z-index: 70;
 }
 .video-content {
-    width: 30%;
+    flex-grow: 1;
+    flex-basis: 340px;
+    width: 340px;
     margin: 10px 10px 10px 0;
     padding-bottom: 20px;
 }
@@ -320,7 +328,7 @@ footer ul li a {
 .img-container {
     background: #222222;
     height: 197px;
-    width: 32%;
+    width: 340px;
     border-radius: 10px;
     margin: 10px 10px 10px 0;
 }
@@ -337,6 +345,7 @@ footer ul li a {
     justify-content: space-between;
     font-size: 17px;
     line-height: 1.2;
+    width: 100%;
 }
 .main-title p {
     font-weight: 500;
@@ -435,7 +444,6 @@ footer ul li a {
 .zuby .footer-copy:hover {
     font-size: 20px;
 }
-
 
 
 
